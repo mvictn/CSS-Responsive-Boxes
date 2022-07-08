@@ -1,3 +1,58 @@
 body {
   background: blanchedalmond;
 }
+*{
+  border: 1px solid;
+ 
+}
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.a{
+  background-color: gray;
+  
+  flex-grow: 1;
+}
+
+.b {
+  background-color: gray;
+  flex-grow: 2;
+}
+
+.c {
+  background-color: gray;
+  flex-grow: 1;
+}   
+.b, .c {
+  flex-direction: row;
+  
+}     
+@media(min-width: 600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .a{
+   
+    
+    flex-wrap: wrap;
+
+    
+    width: 100%;
+  }
+  .b{
+    flex-wrap: wrap;
+
+     max-width: 60%;
+  }
+  .c{
+    flex-wrap: wrap;
+
+    max-width: 40%;
+  }
+}
